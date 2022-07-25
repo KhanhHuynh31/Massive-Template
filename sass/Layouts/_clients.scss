@@ -1,0 +1,35 @@
+.clients {
+    .clients__content {
+        .clients__carousel {
+            width: 85%;
+            margin: 0 auto;
+            .clients__item {
+                width: 185px;
+                margin: 20px;
+                img {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    @include responsive("medium") {
+        .heading--text {
+            h3 {
+                font-size: $fs-3;
+            }
+            p {
+                width: 100%;
+            }
+        }
+        .clients__content {
+            .clients__carousel {
+                width: 95%;
+                .clients__item {
+                    width: 190px;
+                }
+            }
+        }
+    }
+}

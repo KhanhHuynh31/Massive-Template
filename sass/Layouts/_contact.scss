@@ -1,0 +1,50 @@
+.contact {
+    .contact__content {
+        background-image: url(../img/15.jpg);
+        height: 476px;
+        background-repeat: repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        .row {
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            width: 80%;
+            margin: 0 auto;
+            .contact__item {
+                text-align: center;
+                .contact__icon {
+                    color: $color-white-0;
+                    padding-bottom: 30px;
+                    font-size: $fs-4;
+                }
+
+                .contact__text {
+                    
+                    h4 {
+                        color: $color-white-0;
+                        margin-bottom: 20px;
+                        letter-spacing: 1px;
+                        font-weight: normal;
+                        font-size: $fs-3;
+                    }
+                    p{
+                        font-size: $fs-1;
+                        color: $color-white-0;
+
+                    }
+                }
+            }
+        }
+    }
+    @include responsive("large") {
+        .contact__content {
+            height: 900px;
+            .row {
+                top: 15%;
+            }
+        }
+    }
+}

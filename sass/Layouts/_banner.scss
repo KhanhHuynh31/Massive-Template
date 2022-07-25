@@ -1,0 +1,76 @@
+#carouselMassive {
+    .carousel-inner {
+        height: 754px;
+        .carousel-item {
+            img {
+                width: 100%;
+                height: 100%;
+                @extend %backgroundImg;
+            }
+            .carouselMassive__text {
+                position: absolute;
+                top: 40%;
+                left: 12%;
+                span {
+                    font-size: $fs-3;
+                }
+                h1 {
+                    font-size: $fs-4;
+                }
+            }
+            .carouselMassive__text--white {
+                h1 {
+                    color: white;
+                }
+                p {
+                    color: white;
+                }
+            }
+        }
+    }
+    .carousel-indicators {
+        button {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-bottom: 10%;
+            background-color: transparent;
+            border: 1px solid white;
+            &.active{
+                background-color: white;
+            }
+        }
+
+    }
+    .carousel-control-prev {
+        width: 30%;
+        margin-top: 180px;
+        margin-bottom: 120px;
+        &:hover {
+            cursor: url(http://massivemarkup.lab.themebucket.net/assets/img/carousel/arrow_left.png), auto;
+        }
+    }
+    .carousel-control-next {
+        width: 30%;
+        margin-top: 180px;
+        margin-bottom: 120px;
+        &:hover {
+            cursor: url(http://massivemarkup.lab.themebucket.net/assets/img/carousel/arrow_right.png), auto;
+        }
+    }
+    @include responsive("large") {
+        .carousel-inner {
+            .carousel-item {
+                img {
+                    width: 100%;
+                    height: 100vh;
+                }
+                .carouselMassive__text {
+                    h1 {
+                        font-size: $fs-5 + 2;
+                    }
+                }
+            }
+        }
+    }
+}

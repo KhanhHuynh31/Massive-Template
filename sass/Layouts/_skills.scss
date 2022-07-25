@@ -1,0 +1,115 @@
+.skills {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/4.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+    .skills__content {
+        .dark-overplay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            content: "";
+            z-index: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .left__skills {
+            position: relative;
+
+            h3 {
+                font-size: $fs-5;
+                color: $color-white-0;
+                letter-spacing: 6px;
+                position: absolute;
+                top: 50%;
+                right: 20%;
+            }
+        }
+        .right__skills {
+            padding-left: 60px;
+            max-width: 530px;
+            position: relative;
+            h4 {
+                color: $color-white-0;
+            }
+            p {
+                color: $color-white-0;
+            }
+            .skills__progress {
+                .progress {
+                    height: 20px;
+                    display: block;
+                    border-radius: 0;
+                    background-color: $color-white-2;
+                    overflow: visible;
+                    margin: 50px 0;
+                    .progress-bar {
+                        height: 100%;
+                        color: black;
+                        background-color: $color-white-0;
+                        padding-left: $pd-1;
+                        text-align: left;
+                        position: relative;
+                        overflow: visible;
+                        span {
+                            font-size: $fs-0 - 3;
+                            color: $color-black-1;
+                            background-color: $color-white-3;
+                            position: absolute;
+                            top: -28px;
+                            right: -5px;
+                            display: inline-block;
+                            min-width: 25px;
+                            height: 20px;
+                            padding: 0 8px;
+                            text-align: center;
+                            letter-spacing: 0;
+                            border-radius: 30px;
+                            line-height: 20px;
+                            z-index: 50;
+                            &:before {
+                                position: absolute;
+                                bottom: -2.2px;
+                                left: 16px;
+                                display: block;
+                                width: 5px;
+                                height: 5px;
+                                content: "";
+                                transform: rotate(45deg);
+                                border-style: none;
+                                border-color: #a4a4a4;
+                                border-right: 1 px solid #a4a4a4;
+                                background-color: #a4a4a4;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include responsive("medium") {
+        .skills__content {
+            .dark-overplay{
+                opacity: 0;
+            }
+            
+        }
+    }
+    @include responsive("large") {
+        .skills__content {
+            .left__skills {
+                padding: 100px;
+            }
+            .right__skills{
+                max-width: 94%;
+                padding-top: 100px;
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+.massive_navbar {
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    background-color: transparent !important;
+    z-index: 900;
+    .navbar-brand {
+        img {
+            height: 96px;
+            width: auto;
+            padding: 2px 20px;
+        }
+    }
+    .right_content {
+        justify-content: end;
+        .content {
+            .massive__content {
+                letter-spacing: 0.5px;
+                padding-right: 20px;
+                li {
+                    margin-left: 2px;
+                    a {
+                        padding: 0 $pd-1 + 2;
+                        outline: none;
+                        @include styleText($color-black-0, $fs-0, $fw-0);
+                    }
+                    .active {
+                        color: $color-yellow-0;
+                    }
+                    :hover {
+                        color: $color-yellow-0;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive("large") {
+        
+        .navbar-toggler {
+            border: none;
+            span{
+                font-size: 15px;
+                
+            }
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        .navbar-brand {
+            img {
+                padding-right: 0;
+            }
+        }
+        .right_content {
+            .content {
+                .massive__content {
+                    li {
+                        a {
+                            padding: 0 $pd-0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include responsive("medium") {
+        background-color: white !important;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        .container-fluid {
+            background-color: white;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            .navbar-brand {
+                img {
+                    height: 60px;
+                }
+            }
+            .right_content {
+                justify-content: start;
+                padding: 0 20px;
+
+                .content {
+                    width: 100%;
+                    .massive__content {
+                        li {
+                            border-top: 1px solid $color-balck-3;
+                            a {
+                                padding: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

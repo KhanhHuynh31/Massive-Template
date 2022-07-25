@@ -1,0 +1,36 @@
+.button--white{
+    @include styleButton($color-white-0,$color-white-6,transparent,$fs-0,$fw-1,$pd-2, $pd-4 - 2);
+    border-radius: 3px;
+    font-size: $fs-0 + 1;
+    letter-spacing: 1px;
+    font-weight: normal;
+    transition: .3s;
+    &:hover{
+        @include hoverButton($color-white-0,$color-yellow-0,transparent);
+    }
+    
+}
+.button--black{
+    @include styleButton($color-white-0,$color-black-1,transparent,$fs-0,$fw-1,$pd-2, $pd-4 - 2);
+    border-radius: 3px;
+    font-size: $fs-0 + 1;
+    letter-spacing: 1px;
+    font-weight: normal;
+    transition: .3s;
+    &:hover{
+        @include hoverButton($color-white-0,$color-yellow-0,transparent);
+    }
+    
+}
+.button--border{
+    @include styleButton($color-black-1,$color-white-6,$color-black-1,$fs-0,$fw-1,$pd-2, $pd-4 - 2);
+    border-radius: 3px;
+    font-size: $fs-0 + 1;
+    letter-spacing: 1px;
+    font-weight: normal;
+    transition: .3s;
+    &:hover{
+        @include hoverButton($color-white-0,$color-black-1,$color-black-1);
+    }
+    
+}

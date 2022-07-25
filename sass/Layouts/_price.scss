@@ -1,0 +1,90 @@
+.price {
+    .price__content {
+        .row {
+            width: 90%;
+            margin: 0 auto;
+            .price__item {
+                padding: 50px;
+                text-align: center;
+                border: 1px solid #e8e8e8;
+                background: #fff;
+                h1 {
+                    margin-bottom: 30px;
+                    font-size: $fs-1 + 1;
+                    letter-spacing: 2px;
+                }
+                .price__value {
+                    margin-bottom: 40px;
+                    padding: 25px 0;
+                    border-top: 1px solid $color-white-9;
+                    border-bottom: 1px solid $color-white-9;
+                }
+                .dollar {
+                    font-size: 42px;
+                    font-weight: normal;
+                }
+                .small-dollar {
+                    margin-left: -5px;
+                    font-size: 16px;
+                }
+                p {
+                    color: $color-black-1;
+                    font-size: 12px;
+                    margin: 0;
+                }
+
+                ul {
+                    display: block;
+                    margin-bottom: 40px;
+                    padding: 0;
+                    list-style: none;
+                    li {
+                        margin-bottom: 15px;
+                        color: $color-black-1;
+                    }
+                }
+                button {
+                    border-radius: 0;
+                    padding: 15px 50px;
+                }
+            }
+            .price--dark {
+                border: 1px solid $color-black-1;
+                background: $color-black-1;
+                h1 {
+                    color: $color-yellow-0;
+                }
+                p {
+                    color: $color-white-0;
+                }
+                .price__value {
+                    color: $color-white-0;
+                    border-top: 1px solid $color-white-6;
+                    border-bottom: 1px solid $color-white-6;
+                }
+                ul {
+                    li {
+                        color: $color-white-1;
+                    }
+                }
+                button {
+                    background-color: $color-white-0;
+                    &:hover {
+                        color: $color-white-0;
+                        background-color: $color-yellow-0;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive("medium") {
+        .heading--text {
+            h3 {
+                font-size: $fs-3;
+            }
+            p {
+                width: 100%;
+            }
+        }
+    }
+}

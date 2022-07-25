@@ -1,0 +1,39 @@
+.news {
+    .news__content {
+        .news__item {
+            
+            position: relative;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+            .news__img {
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .news__text {
+                position: absolute;
+                top: 10%;
+                left: 0;
+                padding: 10%;
+                span {
+                    color: $color-white-0;
+                    font-size: $fs-1 + 1;
+                    letter-spacing: 1px;
+                }
+                h3 {
+                    letter-spacing: 2px;
+                    font-size: $fs-5;
+                    a {
+                        color: $color-white-0;
+
+                    }
+                }
+                p {
+                    color: $color-white-0;
+                }
+            }
+        }
+    }
+}

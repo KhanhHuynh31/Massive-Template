@@ -1,0 +1,30 @@
+.form {
+    .form__content {
+        width: 75%;
+        margin: 0 auto;
+        .form-group {
+            margin-bottom: 15px;
+        }
+        input {
+            height: 40px;
+            border-radius: 0;
+        }
+        textarea{
+            height: 95px;
+        }
+        button {
+            width: 100%;
+            padding: 10px 20px;
+        }
+    }
+    @include responsive("medium") {
+        .heading--text{
+            h3{
+                font-size: $fs-3;
+            }
+            p{
+                width: 100%;
+            }
+        }
+    }
+}

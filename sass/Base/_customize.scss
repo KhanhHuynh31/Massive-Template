@@ -1,0 +1,55 @@
+.section-content {
+    width: 100%;
+    padding: 100px 0px;
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+}
+.heading--text {
+    width: 90%;
+    margin: 0 auto;
+    h3 {
+        text-align: center;
+        margin-bottom: 0;
+        letter-spacing: 2px;
+        font-weight: normal;
+        font-size: $fs-5;
+    }
+    p {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        color: $color-white-1;
+        line-height: 25px;
+        padding-top: $pd-4 - 2;
+        margin-bottom: 100px;
+    }
+}
+
+/* Back to Top */
+
+.backToTop {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    line-height: 40px;
+    visibility: hidden;
+    opacity: 0;
+    &:hover {
+        background-color: $color-yellow-0;
+        color: $color-black-0;
+    }
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}

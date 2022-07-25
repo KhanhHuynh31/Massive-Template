@@ -1,0 +1,55 @@
+.stats {
+    .stats__content {
+        background-image: url(../img/7.jpg);
+        height: 476px;
+        background-repeat: repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        .row {
+            position: absolute;
+            top: 48%;
+            left: 12%;
+            width: 80%;
+            margin: 0 auto;
+
+            .stats__item {
+                color: $color-white-0;
+                .stats__icon {
+                    font-size: $fs-4;
+                }
+                .stats__number {
+                    position: relative;
+                    padding-left: 60px;
+                    span {
+                        font-size: $fs-4;
+                        letter-spacing: 2px;
+                    }
+                    p {
+                        font-size: $fs-1;
+                        color: $color-white-0;
+                        letter-spacing: 1px;
+                    }
+                    &::before {
+                        position: absolute;
+                        top: 0;
+                        left: 30px;
+                        width: 1px;
+                        height: 80px;
+                        background-color: $color-white-6;
+                        content: "";  
+                        transform: rotate(30deg);
+                    }
+                }
+            }
+        }
+    }
+    @include responsive("medium") {
+        .stats__content {
+            .row {
+                top: 18%;
+            }
+        }
+    }
+}

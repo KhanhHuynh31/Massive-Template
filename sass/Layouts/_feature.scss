@@ -1,0 +1,37 @@
+.feature {
+    .feature__content {
+        img {
+            display: block;
+            margin: 0 auto;
+            max-height: 100%;
+            width: 100%;
+            
+        }
+        .feature__item {
+            padding-left: 40px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            span {
+                color: $color-white-7;
+                font-size: $fs-4;
+                font-weight: normal;
+            }
+            h4 {
+                font-size: $fs-3;
+                margin-bottom: 20px;
+                letter-spacing: 1px;
+                font-weight: normal;
+            }
+            p {
+                width: 83%;
+                line-height: 1.5;
+            }
+        }
+        .feature__button {
+            padding-left: 40px;
+            button{
+                margin-right: 20px;
+            }
+        }
+    }
+}

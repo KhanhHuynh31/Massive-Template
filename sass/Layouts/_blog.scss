@@ -1,0 +1,144 @@
+.blog {
+    .blog__content {
+        .blog__col {
+            padding: 0;
+            margin: 0;
+            width: 390px;
+            .blog__item {
+                .blog__img {
+                    position: relative;
+                    height: 309px;
+                    width: 390px;
+                    img {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .img--bottom {
+                    &::after {
+                        position: absolute;
+                        left: 46%;
+                        bottom: -7px;
+                        display: block;
+                        width: 15px;
+                        height: 14px;
+                        content: "";
+                        transform: rotate(45deg);
+                        border-style: none;
+                        border-color: fff;
+                        border-right: 1px solid #fff;
+                        background-color: #fff;
+                    }
+                }
+                .img--top {
+                    &::after {
+                        position: absolute;
+                        left: 46%;
+                        top: -7px;
+                        display: block;
+                        width: 15px;
+                        height: 14px;
+                        content: "";
+                        transform: rotate(45deg);
+                        border-style: none;
+                        border-color: fff;
+                        border-right: 1px solid #fff;
+                        background-color: #fff;
+                    }
+                }
+                .blog__text {
+                    height: 309px;
+                    width: 390px;
+                    padding: 40px;
+                    padding-left: 30px;
+                    padding-top: 60px;
+                    .blog__date {
+                        letter-spacing: 2px;
+                        color: transparent;
+                        background: none;
+                        font-size: 14px;
+                        position: relative;
+                        &::after {
+                            position: absolute;
+                            top: 30px;
+                            left: 0;
+                            width: 60px;
+                            height: 1px;
+                            content: "";
+                            background: $color-black-1;
+                        }
+                    }
+                    h4 {
+                        margin-top: 15px;
+                        letter-spacing: 1px;
+                        font-size: $fs-3;
+                        a {
+                            color: $color-black-1;
+                            transition: 0.3s;
+                            &:hover {
+                                color: $color-yellow-0;
+                            }
+                        }
+                    }
+                    .blog__tags {
+                        a {
+                            letter-spacing: 1px;
+                            color: $color-gray-4;
+                            font-size: $fs-0 - 1;
+                            margin-right: 10px;
+                            transition: 0.3s;
+                            &:hover {
+                                color: $color-yellow-0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .blog__more {
+        padding-top: 50px;
+        text-align: center;
+        a {
+            color: $color-gray-5;
+            letter-spacing: 1px;
+            position: relative;
+            transition: 0.3s;
+            i {
+                position: absolute;
+                top: 3px;
+                margin-left: 10px;
+                font-weight: bold;
+            }
+            &:hover {
+                color: $color-black-1;
+            }
+        }
+    }
+    @include responsive("large") {
+        .blog__content {
+            .blog__col {
+                width: 100%;
+                .blog__item {
+          
+                    .blog__img {
+                        width: 95%;
+                        margin: 0 auto;
+                    }
+                    .blog__text {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .heading--text {
+            h3 {
+                font-size: $fs-3;
+            }
+            p {
+                width: 100%;
+            }
+        }
+    }
+}
